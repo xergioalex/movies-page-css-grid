@@ -1,5 +1,8 @@
 # Movies Page
+
 Frontend exercise creating a movies page using css grid layout.
+
+- Solution: http://movies-css-grid.xergioalex.com/
 
 ## Challenge
 
@@ -8,7 +11,7 @@ Create a movie page based on the following mockup:
 
 ## Solution
 
-This is my solution inspired on the below mockup:
+This is my solution inspired on the below mockup: http://movies-css-grid.xergioalex.com/
 <img alt="XergioAleX Logo" src="media/movies-css-grid.gif">
 
 
