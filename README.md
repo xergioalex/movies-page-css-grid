@@ -7,12 +7,20 @@ Frontend exercise creating a movies page using css grid layout.
 ## Challenge
 
 Create a movie page based on the following mockup:
-<img alt="XergioAleX Logo" src="media/movies_challenge_mockup.jpg">
+<img alt="Movies Challenge Mockup" src="media/movies_challenge_mockup.jpg">
 
 ## Solution
 
 This is my solution inspired on the below mockup: http://movies-css-grid.xergioalex.com/
-<img alt="XergioAleX Logo" src="media/movies-css-grid.gif">
+<img alt="Movies Css Grid Gif" src="media/movies-css-grid.gif">
+
+Css grid layout areas:
+
+header  | header
+------------------
+sidebar | content
+
+<img alt="Movies Css Grid Areas" src="media/movies-css-grid-areas.png">
 
 
 ## :electric_plug: Powered by [XergioAleX](https://www.xergioalex.com/)
