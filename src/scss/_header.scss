@@ -1,0 +1,203 @@
+.container {
+  .header {
+    height: 64px;
+    display: grid;
+    grid-template-columns: 350px 1fr 280px;
+    grid-area: header;
+    -webkit-box-shadow: -1px 8px 11px -1px rgba(0,0,0,0.1);
+    box-shadow: -1px 8px 11px -1px rgba(0,0,0,0.1);
+    background-color: $c_dark_gray;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    @media (max-width: map_get($screen, _md-max)) {
+      grid-template-columns: 250px 1fr 250px;
+    }
+
+    @media (max-width: map_get($screen, _sm-max)) {
+      grid-template-columns: 230px 1fr 130px;
+    }
+
+    @media (max-width: map_get($screen, _xs-max)) {
+      grid-template-columns: 190px 1fr 100px;
+    }
+
+    @media (max-width: 340px) {
+      grid-template-columns: 160px 1fr 90px;
+    }
+
+    figure {
+      margin: 0;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      img {
+        height: 32px;
+        &.logo-desktop {
+          display: block;
+        }
+        &.logo-responsive {
+          display: none;
+        }
+      }
+      @media (max-width: map_get($screen, _xs-max)) {
+        padding-left: 60px;
+        img {
+          height: 24px;
+          &.logo-desktop {
+            display: none;
+          }
+          &.logo-responsive {
+            display: block;
+          }
+        }
+      }
+
+      @media (max-width: 340px) {
+        img {
+          height: 20px;
+        }
+      }
+    }
+    .user-info {
+      justify-self: end;
+      display: flex;
+      align-items: center;
+      padding-right: 20px;
+      cursor: pointer;
+      figcaption {
+        font-weight: 500;
+        color: $c_white;
+        @media (max-width: map_get($screen, _sm-max)) {
+          display: none;
+        }
+      }
+      .avatar {
+        width: 46px;
+        border-radius: 50%;
+        padding: 0 6px 0 12px;
+      }
+      .arrow-icon {
+        .arrow-drop-up {
+          display: none;
+        }
+        .arrow-drop-down {
+          display: block;
+        }
+      }
+      .user-dropdown {
+        position: absolute;
+        top: 64px;
+        right: 20px;
+        background: $c_primary;
+        background: linear-gradient(90deg, $c_primary 35%, $c_primary_light 100%);
+        display: none;
+        a {
+          text-decoration: none;
+          .dropdown-item {
+            color: $c_white;
+            font-weight: 500;
+            padding: 10px 50px;
+            border-bottom: 1px solid darken($c_primary, 30%);
+          }
+          &:hover {
+            .dropdown-item {
+              background-color: darken($c_primary, 1%);
+            }
+          }
+        }
+        @media (max-width: map_get($screen, _xs-max)) {
+          right: 0;
+          width: 100%;
+          a {
+            .dropdown-item {
+              padding: 10px 20px;
+            }
+          }
+        }
+      }
+      &:hover, &:active, &:focus {
+        .user-dropdown {
+          display: block;
+        }
+        .arrow-icon {
+          .arrow-drop-up {
+            display: block;
+          }
+          .arrow-drop-down {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .input-search {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    .input-search-wrapper {
+      display: flex;
+      justify-content: end;
+      width: 100%;
+      .input-search-responsive {
+        display: none;
+        cursor: pointer;
+        figure {
+          height: 64px;
+          img {
+            width: 28px;
+            padding: 18px 16px;
+          }
+        }
+      }
+      .input-search-desktop {
+        width: 100%;
+        display: flex;
+        .input-form {
+          display: flex;
+          width: 100%;
+          input {
+            width: 100%;
+            height: 20px;
+            border-radius: 5px;
+            padding: 8px;
+            border: 1px solid $c_dark_gray;
+          }
+        }
+      }
+
+      &:hover, &:active, &:focus {
+        .input-search-responsive {
+          & + .input-search-desktop {
+            display: block;
+          }
+        }
+      }
+    }
+
+    @media (max-width: map_get($screen, _xs-max)) {
+      .input-search-wrapper {
+        width: auto;
+        .input-search-responsive {
+          display: block;
+        }
+        .input-search-desktop {
+          display: none;
+          position: absolute;
+          top: 64px;
+          left: 0;
+          width: 100%;
+          .input-form {
+            width: auto;
+            padding: 10px 20px;
+            background-color: $c_primary;
+          }
+        }
+      }
+    }
+  }
+}

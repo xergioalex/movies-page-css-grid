@@ -1,0 +1,97 @@
+.container {
+  display: grid;
+  grid-template-areas: "header header"
+                       "sidebar content";
+  grid-template-rows: 64px;
+  grid-template-columns: 90px 1fr;
+  overflow: auto;
+  @media (max-width: map_get($screen, _xs-max)) {
+    grid-template-areas: "header header"
+                         "content content";
+  }
+
+  .content {
+    grid-area: content;
+    padding: 34px;
+
+    @media (max-width: map_get($screen, _xs-max)) {
+      padding: 20px;
+    }
+    .subtitle {
+      margin-top: 0;
+    }
+    .movies-cards-container {
+      display: grid;
+      grid-gap: 36px 40px;
+      margin-bottom: 36px;
+
+      @media (min-width: map_get($screen, _xl)) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+      @media (min-width: map_get($screen, _md)) and (max-width: map_get($screen, _xl-max)) {
+        grid-template-columns: 1fr 1fr 1fr;
+        .movie-card:nth-of-type(4) {
+          display: none;
+        }
+      }
+
+      @media (max-width: map_get($screen, _md-max)) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px 20px;
+      }
+
+      @media (max-width: map_get($screen, _xxxs-max)) {
+        grid-template-columns: 1fr;
+      }
+
+      .movie-card {
+        height: 194px;
+        background-image: var(--background);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        .movie-info {
+          width: 100%;
+          padding: 8px 10px 10px 10px;
+          height: 90px;
+          @media (min-width: map_get($screen, _xxl)) {
+            height: 80px;
+          }
+          @media (min-width: map_get($screen, _xxxl)) {
+            height: 75px;
+          }
+          @media (max-width: map_get($screen, _sm-max)) {
+            height: auto;
+          }
+          h3 {
+            margin: 0 0 8px 0;
+          }
+          .movie-description {
+            overflow: hidden;
+            p {
+              margin: 0;
+              font-size: 12px;
+            }
+          }
+          color: $c_white;
+          background-color: rgba($c_primary, 0.75);
+        }
+      }
+    }
+
+    .footer {
+      p {
+        margin: 0;
+        text-align: center;
+        a {
+          color: $c_primary;
+        }
+        &:first-child {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

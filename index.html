@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <figure class="logo">
+        <img src="src/images/movies_logo.png" alt="Movies Logo" class="logo-desktop">
+        <img src="src/images/movies_logo_text.png" alt="Movies Logo Responsive" class="logo-responsive">
+      </figure>
+      <div class="input-search">
+        <div class="input-search-wrapper">
+          <div class="input-search-responsive">
+            <figure>
+              <img src="src/images/icons/search.svg" alt="Search Icon">
+            </figure>
+          </div>
+          <div class="input-search-desktop">
+            <div class="input-form">
+              <input type="text" name="search" placeholder="Search your movie, actor or favorite genre...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <figure class="user-info">
+        <figcaption>Sergio Alexander</figcaption>
+        <img src="src/images/user_profile.jpg" alt="Movies Logo" class="avatar">
+        <div class="arrow-icon">
+          <img src="src/images/icons/arrow_drop_down.svg" alt="Arrow drop down" class="arrow-drop-down">
+          <img src="src/images/icons/arrow_drop_up.svg" alt="Arrow drop up" class="arrow-drop-up">
+        </div>
+        <div class="user-dropdown">
+          <a href="#">
+            <div class="dropdown-item">
+              <span>Profile</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="dropdown-item">
+              <span>Logout</span>
+            </div>
+          </a>
+        </div>
+      </figure>
+    </div>
+    <div class="sidebar">
+      <div class="menu-responsive-hamburger">
+        <figure>
+          <img src="src/images/icons/menu.svg" alt="Menu Hamburger Icon">
+        </figure>
+      </div>
+      <div class="menu">
+        <div class="menu-primary">
+          <div class="menu_item">
+            <a href="#">
+              <figure>
+                <img src="src/images/icons/home.svg" alt="Home Icon">
+                <figcaption>Home</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="menu_item">
+            <a href="#">
+              <figure>
+                <img src="src/images/icons/trending_up.svg" alt="Trending Icon">
+                <figcaption>Trending</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="menu_item">
+            <a href="#">
+              <figure>
+                <img src="src/images/icons/favorite.svg" alt="Likes Icon">
+                <figcaption>Likes</figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+        <div class="menu-secondary">
+          <div class="menu_item">
+            <a href="#">
+              <figure>
+                <img src="src/images/icons/settings.svg" alt="Likes Icon">
+                <figcaption>Settings</figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="movies-container">
+        <h2 class="subtitle">New releases</h2>
+        <div class="movies-cards-container">
+          <div class="movie-card" style="--background: url('../images/movies/movies-1.jpg')">
+            <div class="movie-info">
+              <h3>Avengers Infinity War</h3>
+              <div class="movie-description">
+                <p>The Avengers must stop Thanos, an intergalactic warlord, from getting his hands on all the infinity stones.</p>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card" style="--background: url('../images/movies/movies-2.jpg')">
+            <div class="movie-info">
+              <h3>Doctor Strange</h3>
+              <div class="movie-description">
+                <p>Stephen Strange, loses the ability to use his hands. He goes to visit the mysterious Ancient One to heal himself and becomes a great sorcerer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card" style="--background: url('../images/movies/movies-3.jpg')">
+            <div class="movie-info">
+              <h3>Mad Max</h3>
+              <div class="movie-description">
+                <p>Australian post-apocalyptic action film. It tells a story of societal breakdown, murder, and revenge.</p>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card" style="--background: url('../images/movies/movies-4.jpg')">
+            <div class="movie-info">
+              <h3>Wonder Woman</h3>
+              <div class="movie-description">
+                <p>During the Cold War, the film follows Diana and her past love Steve Trevor as they face off against Max Lord and Cheetah.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="subtitle">Critically acclaimed</h2>
+
+        <div class="movies-cards-container">
+          <div class="movie-card" style="--background: url('../images/movies/movies-5.jpg')">
+            <div class="movie-info">
+              <h3>The Silence of the Lambs</h3>
+              <div class="movie-description">
+                <p>Clarice Starling, a young FBI trainee who is hunting a serial killer, seeks the advice of the imprisoned Dr. Hannibal Lecter to catch a serial killer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card" style="--background: url('../images/movies/movies-6.jpg')">
+            <div class="movie-info">
+              <h3>Joker</h3>
+              <div class="movie-description">
+                <p>In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society.</p>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card" style="--background: url('../images/movies/movies-7.jpg')">
+            <div class="movie-info">
+              <h3>The Green Mile</h3>
+              <div class="movie-description">
+                <p>Paul Edgecomb, the head guard of a prison, meets an inmate, John Coffey, a black man who is accused of murdering two girls.</p>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card" style="--background: url('../images/movies/movies-8.jpg')">
+            <div class="movie-info">
+              <h3>Black Swan</h3>
+              <div class="movie-description">
+                <p>Nina, a ballerina, gets the chance to play the White Swan, Princess Odette. But she finds herself slipping into madness.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="subtitle">You must not miss</h2>
+
+        <div class="movies-cards-container">
+          <div class="movie-card" style="--background: url('../images/movies/movies-9.jpg')">
+            <div class="movie-info">
+              <h3>Parasite</h3>
+              <div class="movie-description">
+                <p>Follows the members of a poor family who scheme to become employed by a wealthy family and infiltrate their household living a parasitic life.</p>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card" style="--background: url('../images/movies/movies-10.jpg')">
+            <div class="movie-info">
+              <h3>Soul</h3>
+              <div class="movie-description">
+                <p>Joe is a middle-school band teacher whose life hasn't quite gone the way he expected. His true passion is jazz -- and he's good.</p>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card" style="--background: url('../images/movies/movies-11.jpg')">
+            <div class="movie-info">
+              <h3>Star Wars: Episode IV</h3>
+              <div class="movie-description">
+                <p>After Princess Leia, is held hostage by Darth Vader, Luke and Han Solo must free her and destroy the powerful weapon created by the Galactic Empire.</p>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card" style="--background: url('../images/movies/movies-12.jpg')">
+            <div class="movie-info">
+              <h3>Batman The Dark Knight</h3>
+              <div class="movie-description">
+                <p>When the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests to fight injustice.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Made with with ❤️ by <a href="https://www.xergioalex.com/" target="_blank">XergioAleX</a> ©2021</p>
+        <p class="github-disclaimer">Fork me on <a href="https://www.xergioalex.com/" target="_blank">GitHub</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

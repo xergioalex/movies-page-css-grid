@@ -102,3 +102,12 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Editors
+.vscode
+.devcontainer
+coverage/
+.env
+
+docker-compose-vs.yaml
+*.map
