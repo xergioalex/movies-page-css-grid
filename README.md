@@ -17,6 +17,30 @@ This is my solution inspired on the below mockup: http://movies-css-grid.xergioa
 Css grid layout areas:
 <img alt="Movies Css Grid Areas" src="media/movies-css-grid-areas.png">
 
+### How to make updates
+
+Run local server:
+```
+yarn server
+```
+
+Run sass watcher:
+```
+yarn sass:watcher
+```
+
+**Optional:** Open the project using vscode docker container.
+
+Run setup script:
+```
+cd docker/local
+bash docker.sh base
+```
+
+Reset folder project permissions:
+```
+chown -R user_id:group_id movies-page-css-grid
+```
 
 ## :electric_plug: Powered by [XergioAleX](https://www.xergioalex.com/)
 

@@ -14,7 +14,4 @@ if [[ "$1" == "base" ]]; then
   utils.load_environment_permissions
   utils.check_local_network
   utils.printer "Setup done..."
-elif [[ "$1" == "permissions" ]]; then
-  utils.printer "Setup permissions..."
-  chown -R ${SERVICE_PERMISSIONS} /home/node/app
 fi
