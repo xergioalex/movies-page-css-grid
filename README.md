@@ -15,11 +15,6 @@ This is my solution inspired on the below mockup: http://movies-css-grid.xergioa
 <img alt="Movies Css Grid Gif" src="media/movies-css-grid.gif">
 
 Css grid layout areas:
-
-header  | header
-··················
-sidebar | content
-
 <img alt="Movies Css Grid Areas" src="media/movies-css-grid-areas.png">
 
 
