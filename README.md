@@ -17,7 +17,7 @@ This is my solution inspired on the below mockup: http://movies-css-grid.xergioa
 Css grid layout areas:
 
 header  | header
-------------------
+··················
 sidebar | content
 
 <img alt="Movies Css Grid Areas" src="media/movies-css-grid-areas.png">
