@@ -1,6 +1,6 @@
 // If you want to run as a non-root user in the container, see .devcontainer/docker-compose.yml.
 {
-	"name": "xergioalex.com - NodeJs & TypeScript & Serverless",
+	"name": "Movies Page Css Grid - NodeJs & TypeScript & Serverless",
 	"dockerComposeFile": "../docker/local/docker-compose.yml",
 	"service": "app_vscode",
 	"workspaceFolder": "/home/node/app",
