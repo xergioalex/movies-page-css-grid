@@ -50,6 +50,13 @@
       @media (max-width: map_get($screen, _xs-max)) {
         transform: translateX(-90px);
       }
+
+      .menu-secondary {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 90px;
+      }
     }
 
     @media (max-width: map_get($screen, _xs-max)) {

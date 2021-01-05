@@ -256,6 +256,12 @@ body {
     transform: translateX(-90px);
   }
 }
+.container .sidebar .menu .menu-secondary {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 90px;
+}
 @media (max-width: 575px) {
   .container .sidebar .menu-responsive-hamburger figure {
     display: block;
