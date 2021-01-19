@@ -2,6 +2,12 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #3c3c3c;
+    color: #ffffff;
+  }
+}
 
 .figure {
   margin: 0;
@@ -234,6 +240,11 @@ body {
   justify-content: space-between;
   transition: transform 0.3s;
 }
+@media (prefers-reduced-motion) {
+  .container .sidebar .menu {
+    transition: none;
+  }
+}
 .container .sidebar .menu .menu_item {
   padding: 18px 0;
 }
@@ -335,27 +346,16 @@ body {
 .container .content .movies-cards-container .movie-card .movie-info {
   width: 100%;
   padding: 8px 10px 10px 10px;
-  height: 90px;
+  height: 80px;
   color: #ffffff;
   background-color: rgba(252, 83, 90, 0.75);
 }
-@media (min-width: 1500px) {
-  .container .content .movies-cards-container .movie-card .movie-info {
-    height: 80px;
-  }
-}
-@media (min-width: 1600px) {
-  .container .content .movies-cards-container .movie-card .movie-info {
-    height: 75px;
-  }
-}
-@media (max-width: 767px) {
-  .container .content .movies-cards-container .movie-card .movie-info {
-    height: auto;
-  }
-}
 .container .content .movies-cards-container .movie-card .movie-info h3 {
   margin: 0 0 8px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .container .content .movies-cards-container .movie-card .movie-info .movie-description {
   overflow: hidden;
@@ -363,6 +363,10 @@ body {
 .container .content .movies-cards-container .movie-card .movie-info .movie-description p {
   margin: 0;
   font-size: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .container .content .footer p {
   margin: 0;

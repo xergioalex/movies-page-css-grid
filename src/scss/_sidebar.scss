@@ -30,6 +30,11 @@
       flex-direction: column;
       justify-content: space-between;
       transition: transform 0.3s;
+
+      @media (prefers-reduced-motion) {
+        transition: none;
+      }
+
       .menu_item {
         padding: 18px 0;
         a {
